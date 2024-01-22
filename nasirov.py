@@ -12,8 +12,8 @@ st.write(df)
 
 # Streamlit app
 st.title("Real Estate Data Visualization")
-st.title('test')
-st.title('ziya')
+st.title('AYE Jizn VORAM')
+st.title('oRHANCIM AKILLI OL')
 # Scatter Plot for Price and Size
 scatter_fig = px.scatter(df, x='size_in_sqft', y='price', color='neighborhood', size='no_of_bedrooms', hover_data=['no_of_bathrooms'])
 st.plotly_chart(scatter_fig)
