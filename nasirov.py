@@ -26,5 +26,3 @@ st.plotly_chart(histogram_fig)
 box_fig = px.box(df, x='neighborhood', y='price_per_sqft', points='all', title='Price per Square Foot by Neighborhood')
 st.plotly_chart(box_fig)
 
-
-
