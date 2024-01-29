@@ -29,7 +29,8 @@ def open_linkedin_profile():
         transition: background-color 0.3s;
     """
     linkedin_icon = '<i class="fab fa-linkedin"></i>'
-    st.markdown(f'<a href="{linkedin_url}" target="_blank" style="{button_style}">{linkedin_icon} Visit MY LinkedIn 🚀</a>', unsafe_allow_html=True)
+    st.markdown(f'<a href="{linkedin_url}" target="_blank" style="{button_style}">{linkedin_icon} 
+                Visit MY LinkedIn 🚀</a>', unsafe_allow_html=True)
 
 # Display the button with LinkedIn icon
 open_linkedin_profile()
