@@ -8,7 +8,7 @@ fuel_sales_net_income = [-36600, 26750, 246315]
 wash_net_income = [-29103, -19260, 417160]
 
 # Streamlit App
-st.title('Fuel Express 🚗⛽')  # Added emoji for petrol
+st.title('Fuel Express !🚗⛽')  # Added emoji for petrol
 
 # Sidebar for Selection
 selected_chart = st.sidebar.selectbox('Select Chart', ['Annual Revenue Breakdown', 'Expenses for Each Year', 'Net Income for Different Services'])
