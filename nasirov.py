@@ -75,7 +75,8 @@ fig.add_trace(px.scatter(x=[rounded_prediction], y=[rounded_prediction], labels=
 
 
 # Streamlit app
-st.title('Linear Regression Prediction Visualization')
+
+st.title('Visualization')
 
 # Display scatter plot
 st.plotly_chart(fig)
