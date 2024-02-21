@@ -2,36 +2,13 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objs as go
 
-
-# Function to open LinkedIn profile in a new tab
-def open_linkedin_profile():
-    linkedin_url = "https://www.linkedin.com/in/orkhan-nasirov/"
-    button_style = """
-        background-color: #0077B5;
-        color: white;
-        padding: 12px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        border-radius: 5px;
-        border: 2px solid #0077B5;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    """
-    linkedin_icon = '<i class="fab fa-linkedin"></i>'
-    st.markdown(f'<a href="{linkedin_url}" target="_blank" style="{button_style}">{linkedin_icon} Visit MY LinkedIn 🚀</a>', unsafe_allow_html=True)
-
-# Call the function to display the LinkedIn profile button
-open_linkedin_profile()
-
-
-xls = r"C:\Users\Firudin\Documents\GitHub\streamlit\Github_1\test1\DA Task Dataset (1).xlsx"
+xls = "Rebills.csv"
+xls1 = "Trials.csv"
 
 # Load the dataset
 
-df_trials = pd.read_excel(xls, sheet_name='Trials')
-df_rebills = pd.read_excel(xls, sheet_name='Rebills')
+df_trials = pd.read_csv(xls1)
+df_rebills = pd.read_csv(xls)
 
 # Drop rows with NaN values in both dataframes
 df_trials_cleaned = df_trials.dropna()
